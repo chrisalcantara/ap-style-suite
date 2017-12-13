@@ -74,7 +74,12 @@ const numberWordKey = {
 
 const formatSmallNumber = function(num) {
   const stringNumber = (isString(num)) ? num : num.toString();
-  return numberWordKey[stringNumber];
+  const numberString = numberWordKey[stringNumber];
+  if (numberString != undefined) {
+    return numberString;
+  } else {
+    return Error('Number needs tobe less than 10')
+  }
 };
 
 const format = function(number) {
@@ -89,5 +94,7 @@ const format = function(number) {
 };
 
 module.exports = {
-  "format": format
+  "formatNumber": format,
+  "formatSmallNumber": formatSmallNumber,
+  "formatLargeNumber": formatLargeNumber
 };

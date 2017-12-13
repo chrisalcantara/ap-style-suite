@@ -1,11 +1,23 @@
-const apMonthsList = ["Jan.","Feb.","March","April","May","June","July","Aug.","Sept.","Oct.","Nov.","Dec."];
+const apMonthsList = [
+  "Jan.",
+  "Feb.",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "Aug.",
+  "Sept.",
+  "Oct.",
+  "Nov.",
+  "Dec."
+];
 
 const getDateObjects = function(date) {
     const dateObj = new Date(Date.parse(date));
     const day = dateObj.getUTCDate();
     const month = apMonthsList[dateObj.getUTCMonth()];
     const year = dateObj.getFullYear();
-
     return {
       "day": day,
       "month": month,

@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/chrisalcantara/ap-style-suite/issues"
   },
-  "homepage": "https://github.com/chrisalcantara/ap-style-suite#readme"
+  "homepage": "https://github.com/chrisalcantara/ap-style-suite#readme",
+  "dependencies": {
+    "jest": "^21.2.1"
+  }
 }

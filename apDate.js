@@ -1,4 +1,3 @@
-
 const apMonthsList = ["Jan.","Feb.","March","April","May","June","July","Aug.","Sept.","Oct.","Nov.","Dec."];
 
 const getDateObjects = function(date) {
@@ -14,14 +13,14 @@ const getDateObjects = function(date) {
     }
 };
 
-const makeShortAP = function(date) {
+const shortDate = function(date) {
   const obj = getDateObjects(date);
   const month = obj.month;
   const day = obj.day;
   return month + " " + day;
 };
 
-const makeLongAP = function(date) {
+const longDate = function(date) {
   const obj = getDateObjects(date);
   const day = obj.day;
   const month = obj.month;
@@ -30,6 +29,6 @@ const makeLongAP = function(date) {
 };
 
 module.exports = {
-  "shortAP": makeShortAP,
-  "longAP": makeLongAP
+  "short": shortDate,
+  "long": longDate
 };

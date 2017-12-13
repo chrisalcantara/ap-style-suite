@@ -1,0 +1,25 @@
+{
+  "name": "ap-style-suite",
+  "version": "1.0.0",
+  "description": "A suite of functions to handle basic AP style formatting for dates, numbers and state names",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisalcantara/ap-style-suite.git"
+  },
+  "keywords": [
+    "ap-style-journalism"
+  ],
+  "author": "Chris Alcantara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisalcantara/ap-style-suite/issues"
+  },
+  "homepage": "https://github.com/chrisalcantara/ap-style-suite#readme"
+}

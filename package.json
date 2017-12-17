@@ -1,6 +1,6 @@
 {
   "name": "ap-style-suite",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A suite of functions to handle basic AP style formatting for dates, numbers and state names",
   "main": "index.js",
   "directories": {

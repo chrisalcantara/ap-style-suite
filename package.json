@@ -1,6 +1,6 @@
 {
   "name": "ap-style-suite",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A suite of functions to handle basic AP style formatting for dates, numbers and state names",
   "main": "index.js",
   "directories": {
@@ -22,7 +22,8 @@
     "url": "https://github.com/chrisalcantara/ap-style-suite/issues"
   },
   "homepage": "https://github.com/chrisalcantara/ap-style-suite#readme",
-  "dependencies": {
-    "jest": "^21.2.1"
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^22.0.4"
   }
 }

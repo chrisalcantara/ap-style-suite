@@ -1,30 +1,29 @@
 const apMonthsList = [
-  "Jan.",
-  "Feb.",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "Aug.",
-  "Sept.",
-  "Oct.",
-  "Nov.",
-  "Dec."
+  'Jan.',
+  'Feb.',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'Aug.',
+  'Sept.',
+  'Oct.',
+  'Nov.',
+  'Dec.'
 ];
 
 const getDateObjects = function(date) {
   const dateObj = new Date(Date.parse(date));
-  const day = dateObj.getUTCDate();
-  const month = apMonthsList[dateObj.getUTCMonth()];
+  const day = dateObj.getDate();
+  const month = apMonthsList[dateObj.getMonth()];
   const year = dateObj.getFullYear();
 
   return {
-    "day": day,
-    "month": month,
-    "year": year,
-  }
-
+    day: day,
+    month: month,
+    year: year
+  };
 };
 
 const shortDate = function(date) {
@@ -32,8 +31,7 @@ const shortDate = function(date) {
   const month = obj.month;
   const day = obj.day;
 
-  return month + " " + day;
-
+  return month + ' ' + day;
 };
 
 const longDate = function(date) {
@@ -42,12 +40,10 @@ const longDate = function(date) {
   const month = obj.month;
   const year = obj.year;
 
-  return month + " " + day + ", " + year;
-
+  return month + ' ' + day + ', ' + year;
 };
 
-
 module.exports = {
-  "short": shortDate,
-  "long": longDate
+  short: shortDate,
+  long: longDate
 };

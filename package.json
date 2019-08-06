@@ -1,13 +1,13 @@
 {
   "name": "ap-style-suite",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "A suite of functions to handle basic AP style formatting for dates, numbers and state names",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "jest --env=node test/*.js"
+    "test": "jest test/*.js"
   },
   "repository": {
     "type": "git",

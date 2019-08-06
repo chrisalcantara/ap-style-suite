@@ -10,11 +10,26 @@ const apMonthsList = [
   'Sept.',
   'Oct.',
   'Nov.',
-  'Dec.'
+  'Dec.',
 ];
 
+function formatDate(date) {
+
+  if (date.indexOf('-') != -1) {
+    let split = date.split('-');
+    if (split[0].length == 4) {
+      date = `${split[1]}/${split[2]}/${split[0]}`;
+    } else {
+      date = `${split[0]}/${split[1]}/${split[2]}`;
+    }
+  }
+
+  date = new Date(Date.parse(date));
+  return date;
+}
+
 const getDateObjects = function(date) {
-  const dateObj = new Date(Date.parse(date));
+  const dateObj = formatDate(date);
   const day = dateObj.getDate();
   const month = apMonthsList[dateObj.getMonth()];
   const year = dateObj.getFullYear();
@@ -22,7 +37,7 @@ const getDateObjects = function(date) {
   return {
     day: day,
     month: month,
-    year: year
+    year: year,
   };
 };
 
@@ -45,5 +60,5 @@ const longDate = function(date) {
 
 module.exports = {
   short: shortDate,
-  long: longDate
+  long: longDate,
 };

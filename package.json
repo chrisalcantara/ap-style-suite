@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest test/*.js"
+    "test": "jest --env=node test/*.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,9 @@
   "homepage": "https://github.com/chrisalcantara/ap-style-suite#readme",
   "dependencies": {},
   "devDependencies": {
-    "jest": "^22.0.4"
+    "jest": "^22.4.4"
+  },
+  "jest": {
+    "verbose": true
   }
 }

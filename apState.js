@@ -56,6 +56,7 @@ const states = {
 function postalToState(postal) {
   return states.postal[postal];
 }
+
 module.exports = {
   postal: postalToState,
 };
